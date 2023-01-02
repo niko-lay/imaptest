@@ -7,7 +7,7 @@ on:
     # I don't think imaptest or dovecot change all that frequently, so once a
     # week should be sufficient
     - cron:  '30 5 * * 0'
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 jobs:
   build_and_push:
@@ -35,8 +35,9 @@ jobs:
           images: jheiss/imaptest
           flavor: |
             latest=true
+          # type=ref for workflow_dispatch events, type=schedule for schedule events
           tags: |
-            type=ref,event=workflow_dispatch
+            type=ref,event=branch
             type=schedule,pattern={{date 'YYYYMMDD'}}
 
       # https://github.com/marketplace/actions/build-and-push-docker-images      
