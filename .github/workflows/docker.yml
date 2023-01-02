@@ -36,6 +36,7 @@ jobs:
           flavor: |
             latest=true
           tags: |
+            type=ref,event=workflow_dispatch
             type=schedule,pattern={{date 'YYYYMMDD'}}
 
       # https://github.com/marketplace/actions/build-and-push-docker-images      
