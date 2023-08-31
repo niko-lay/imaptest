@@ -32,7 +32,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: jheiss/imaptest
+          images: nikolay2007/imaptest
           flavor: |
             latest=true
           # type=ref for workflow_dispatch events, type=schedule for schedule events
