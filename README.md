@@ -3,8 +3,7 @@
 ## Overview
 
 This creates an unofficial Docker image of ImapTest, an IMAP server tester
-from the Dovecot project. The image is published
-https://hub.docker.com/repository/docker/jheiss/imaptest
+from the Dovecot project. The image is published https://hub.docker.com/r/nikolay2007/imaptest
 
 ImapTest is an integration and stress tester for IMAP servers, developed as part of the Dovecot project.
 
